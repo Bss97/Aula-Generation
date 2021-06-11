@@ -2,22 +2,29 @@ package POO;
 
 public class Cavalo extends Animal {
 	
-	private int velocidade;
+	private int velocidademax;
 	
 	public Cavalo(String nome,int idade,int vel) {
 		
 		super(nome,idade);
-		this.velocidade=vel;
+		this.velocidademax=vel;
 	}
 	public int getVelocidade() {
-		return velocidade;
+		return velocidademax;
 	}
 
 	public void setVelocidade(int vel) {
-		this.velocidade = vel;
+		this.velocidademax = vel;
 	}
 	public void imprimirInfo() {
-		System.out.println("\nNome do cavalo: "+getNome()+"\nIdade: "+getIdade()+" ano(s)"+"\nVelociade: "
-	+velocidade+" km/h");
+		System.out.println("\nNome do cavalo: "+getNome()+"\nIdade: "+getIdade()+" ano(s)"+"\nVelociade máxima: "
+	+velocidademax+" km/h");
+	}
+	@Override
+	public void Som(String somAnimal) {
+		System.out.println("\nO cavalo se comunica relinchando");
+	}
+	public void Correr() {
+		System.out.println("O cavalo gosta de correr!!");
 	}
 }

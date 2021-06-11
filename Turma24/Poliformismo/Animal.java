@@ -4,15 +4,16 @@ package POO;
 utilize os seus conhecimentos e distribua as características de forma que tudo o que for comum a todos os animais 
 fique na classe Animal: */
 
-	public class Animal {
+	public abstract class Animal {
 		
 	private String nome;
 	private int idade;
+	abstract public void Som(String somAnimal);
 	
-	public Animal(String name,int age) {
+	public Animal(String nome,int idade) {
 		super();
-		this.nome=name;
-		this.idade=age;
+		this.nome=nome;
+		this.idade=idade;
 	}
 
 	public String getNome() {
@@ -30,5 +31,4 @@ fique na classe Animal: */
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	
 }
