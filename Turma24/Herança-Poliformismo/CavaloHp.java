@@ -1,10 +1,10 @@
-package POO;
+package HerançaPoliformismo;
 
-public class Cavalo extends Animal {
+public class CavaloHp extends AnimalHp {
+
+private int velocidademax;
 	
-	private int velocidademax;
-	
-	public Cavalo(String nome,int idade,int vel) {
+	public CavaloHp(String nome,int idade,int vel) {
 		
 		super(nome,idade);
 		this.velocidademax=vel;
@@ -17,12 +17,12 @@ public class Cavalo extends Animal {
 		this.velocidademax = vel;
 	}
 	public void imprimirInfo() {
-		System.out.println("\nNome do cavalo: "+getNome()+"\nIdade: "+getIdade()+" ano(s)"+"\nVelociade máxima: "
+		System.out.println("Nome do cavalo: "+getNome()+"\nIdade: "+getIdade()+" ano(s)"+"\nVelociade máxima: "
 	+velocidademax+" km/h");
 	}
 	@Override
 	public void Som(String somAnimal) {
-		System.out.println("\nO cavalo se comunica relinchando");
+		System.out.println("O cavalo se comunica relinchando");
 	}
 	public void Correr() {
 		System.out.println("O cavalo gosta de correr!!");
