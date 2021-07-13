@@ -1,4 +1,4 @@
-package org.generation.minhaLojaDeGames.security;
+package org.generation.minhaLojaDeGames.service;
 
 import java.nio.charset.Charset;
 import java.util.Optional;

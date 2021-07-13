@@ -4,7 +4,7 @@ import java.util.Optional;
 
 import org.generation.minhaLojaDeGames.model.UserLogin;
 import org.generation.minhaLojaDeGames.model.Usuario;
-import org.generation.minhaLojaDeGames.security.UsuarioService;
+import org.generation.minhaLojaDeGames.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
